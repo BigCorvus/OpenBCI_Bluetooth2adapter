@@ -1,4 +1,7 @@
 # OpenBCI_Bluetooth2adapter
+
+![alt tag](https://github.com/BigCorvus/OpenBCI_Bluetooth2adapter/blob/master/OpenBCI%20Cyton%2032bit%20bluetooth%202%20adapter.jpg)
+
 Eagle files for an adapter board for the OpenBCI 32bit V3 board (Cyton) that enables higher data/sampling rates and eliminates the need for a USB dongle. Reliable operation is possible with 500Hz and 8 channels or 250Hz and 16 Channels. The OpenBCI GUI 2.0 is able to keep up with that.
 The bluetooth module used is the common HC-05. Programming the board is still accomplished via dongle/RFduino.
 
