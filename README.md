@@ -9,4 +9,5 @@ The bluetooth module used is the common HC-05. Programming the board is still ac
 In order for this board to work you have to implement WinslowStrong's changes in firmware (https://github.com/WinslowStrong/OpenBCI_Wired_USB) and you have to set up a baud rate of 230400baud on your bluetooth module (this is the highest rate I've been able to acheive reliably with the HC05). 
 I've modified my Cyton board by putting the RFduino module on headers so that it can be removed after flashing the modified firmware. 
 
-A solder jumper is included on the bottom side of the board to enter programming mode. You can short it temporarily using some metal object. Check out the HC-05 datasheet to find out about the commands.
+A solder jumper is included on the bottom side of the board to enter programming mode. You can short it temporarily using some metal object. In command mode (the LED is blinking slowly) you have to set a baud rate of 38400baud 8N1 and send after each command \r\n. If you enter AT the module should respond with OK.
+To set the baud rate just enter AT+UART=230400,0,0 and to set the name type in AT+NAME=OpenBCI32 or whatever name you like. 
